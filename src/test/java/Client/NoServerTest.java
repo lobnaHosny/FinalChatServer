@@ -15,10 +15,10 @@ class NoServerTest {
         assertNull(client.s); //socket should be null, since no connection will be established
     }
 
-    @Test
+    /*@Test
     void noServerGUI(){ //initializing client gui without running server
         ClientGUI clientGUI = new ClientGUI(65000);
         assertNull(clientGUI.s); //socket should be null, since no connection will be established
-    }
+    }*/
 
 }
