@@ -31,6 +31,7 @@ class ServerInitTest {
 
     for (int i=0; i<validPorts.length; i++) {
         runServer(validPorts[i]);
+        Thread.sleep(500);
         assertEquals(validPorts[i], server.server.getLocalPort());
 
     }
