@@ -43,6 +43,7 @@ class ServerInitTest {
 
         for (int j=0; j<invalidPorts.length; j++){
             runServer(invalidPorts[j]);
+            Thread.sleep(500);
             assertNull(server.server);
         }
     }
@@ -52,6 +53,7 @@ class ServerInitTest {
         void busyPortTest() throws IOException, BindException {
         ServerSocket ss = new ServerSocket(8080);
         runServer(8080);
+        Thread.sleep(500);
         assertNull(server.server);
 
 
