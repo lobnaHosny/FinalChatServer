@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: Server.ServerInitTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in Server.ServerInitTest
+busyPortTest  Time elapsed: 0.001 s  <<< ERROR!
+java.net.BindException: Address already in use: NET_Bind
+	at Server.ServerInitTest.busyPortTest(ServerInitTest.java:53)
+
